@@ -1,0 +1,118 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "ronec",
+  "dataset_name": "ronec",
+  "dataset_size": 12010076,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/community-datasets/ronec@2a0856f6979067c4ef7ea6a462ff9daabd055826/ronec/train-00000-of-00001.parquet": {
+      "num_bytes": 2140208,
+      "checksum": null
+    },
+    "hf://datasets/community-datasets/ronec@2a0856f6979067c4ef7ea6a462ff9daabd055826/ronec/validation-00000-of-00001.parquet": {
+      "num_bytes": 322587,
+      "checksum": null
+    },
+    "hf://datasets/community-datasets/ronec@2a0856f6979067c4ef7ea6a462ff9daabd055826/ronec/test-00000-of-00001.parquet": {
+      "num_bytes": 473051,
+      "checksum": null
+    }
+  },
+  "download_size": 2935846,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "space_after": {
+      "feature": {
+        "dtype": "bool",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "O",
+          "B-PERSON",
+          "I-PERSON",
+          "B-ORG",
+          "I-ORG",
+          "B-GPE",
+          "I-GPE",
+          "B-LOC",
+          "I-LOC",
+          "B-NAT_REL_POL",
+          "I-NAT_REL_POL",
+          "B-EVENT",
+          "I-EVENT",
+          "B-LANGUAGE",
+          "I-LANGUAGE",
+          "B-WORK_OF_ART",
+          "I-WORK_OF_ART",
+          "B-DATETIME",
+          "I-DATETIME",
+          "B-PERIOD",
+          "I-PERIOD",
+          "B-MONEY",
+          "I-MONEY",
+          "B-QUANTITY",
+          "I-QUANTITY",
+          "B-NUMERIC",
+          "I-NUMERIC",
+          "B-ORDINAL",
+          "I-ORDINAL",
+          "B-FACILITY",
+          "I-FACILITY"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 14945922,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 8804102,
+      "num_examples": 9000,
+      "dataset_name": "ronec"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 1281399,
+      "num_examples": 1330,
+      "dataset_name": "ronec"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 1924575,
+      "num_examples": 2000,
+      "dataset_name": "ronec"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

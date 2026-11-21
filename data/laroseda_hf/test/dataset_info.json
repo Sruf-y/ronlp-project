@@ -1,0 +1,60 @@
+{
+  "builder_name": "laroseda",
+  "citation": "@article{\n    tache2101clustering,\n    title={Clustering Word Embeddings with Self-Organizing Maps. Application on LaRoSeDa -- A Large Romanian Sentiment Data Set},\n    author={Anca Maria Tache and Mihaela Gaman and Radu Tudor Ionescu},\n    journal={ArXiv},\n    year = {2021}\n}\n",
+  "config_name": "laroseda",
+  "dataset_name": "laroseda",
+  "dataset_size": 3633617,
+  "description": "        LaRoSeDa (A Large Romanian Sentiment Data Set) contains 15,000 reviews written in Romanian, of which 7,500 are positive and 7,500 negative.\n        Star ratings of 1 and 2 and of 4 and 5 are provided for negative and positive reviews respectively.\n        The current dataset uses star rating as the label for multi-class classification.\n",
+  "download_checksums": {
+    "https://raw.githubusercontent.com/ancatache/LaRoSeDa/main/data_splitted/laroseda_train.json": {
+      "num_bytes": 4231664,
+      "checksum": null
+    },
+    "https://raw.githubusercontent.com/ancatache/LaRoSeDa/main/data_splitted/laroseda_test.json": {
+      "num_bytes": 1025519,
+      "checksum": null
+    }
+  },
+  "download_size": 5257183,
+  "features": {
+    "index": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "content": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "starRating": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://github.com/ancatache/LaRoSeDa",
+  "license": "CC BY-SA 4.0 License",
+  "size_in_bytes": 8890800,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 2932795,
+      "num_examples": 12000,
+      "dataset_name": "laroseda"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 700822,
+      "num_examples": 3000,
+      "dataset_name": "laroseda"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
